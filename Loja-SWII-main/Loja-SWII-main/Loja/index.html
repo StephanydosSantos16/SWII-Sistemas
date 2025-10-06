@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="btn-carrinho" aria-label="Abrir carrinho">
+    🛒
+    <span id="contador-quantidade">0</span>
+  </button>
+
+  
+  <div class="carrossel-container">
+    <div class="carrossel">
+      <img src="img/banner1.jpg" alt="Banner 1">
+      <img src="img/banner2.jpg" alt="Banner 2">
+      <img src="img/banner3.jpg" alt="Banner 3">
+      <img src="img/banner4.jpg" alt="Banner 4">
+    </div>
+    <button class="seta seta-anterior">&#10094;</button>
+    <button class="seta seta-proximo">&#10095;</button>
+  </div>
+
+ 
+  <h1>Catálogo de Produtos</h1>
+  <div class="produtos-container">
+
+
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/images 1.jpg" alt="Produto 1"></div>
+      <div class="descricao">Produto 1 - Descrição breve</div>
+      <div class="preco">R$ 19,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 2.jpg" alt="Produto 2"></div>
+      <div class="descricao">Produto 2 - Descrição breve</div>
+      <div class="preco">R$ 29,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+   
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 3.png" alt="Produto 3"></div>
+      <div class="descricao">Produto 3 - Descrição breve</div>
+      <div class="preco">R$ 39,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 4.png" alt="Produto 4"></div>
+      <div class="descricao">Produto 4 - Descrição breve</div>
+      <div class="preco">R$ 49,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+  
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 5.png" alt="Produto 5"></div>
+      <div class="descricao">Produto 5 - Descrição breve</div>
+      <div class="preco">R$ 59,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 6.webp" alt="Produto 6"></div>
+      <div class="descricao">Produto 6 - Descrição breve</div>
+      <div class="preco">R$ 69,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 7.webp" alt="Produto 7"></div>
+      <div class="descricao">Produto 7 - Descrição breve</div>
+      <div class="preco">R$ 79,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 8.webp" alt="Produto 8"></div>
+      <div class="descricao">Produto 8 - Descrição breve</div>
+      <div class="preco">R$ 89,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 9.webp" alt="Produto 9"></div>
+      <div class="descricao">Produto 9 - Descrição breve</div>
+      <div class="preco">R$ 99,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+
+        <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 10.webp" alt="Produto 10"></div>
+      <div class="descricao">Produto 10 - Descrição breve</div>
+      <div class="preco">R$ 109,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+>
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/images 11.jpg" alt="Produto 11"></div>
+      <div class="descricao">Produto 11 - Descrição breve</div>
+      <div class="preco">R$ 119,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+   
+    <div class="produto">
+      <div class="imagem-produto"><img src="img/imagem 12.webp" alt="Produto 12"></div>
+      <div class="descricao">Produto 12 - Descrição breve</div>
+      <div class="preco">R$ 129,90</div>
+      <button class="botao-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+  </div>
+
+  
+  <aside id="carrinho-lateral" aria-label="Carrinho de compras">
+    <h2>Seu Carrinho</h2>
+    <div id="itens-carrinho"></div>
+    <div id="total-carrinho">Total: R$ 0,00</div>
+    <button id="btn-finalizar">Finalizar Compra</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

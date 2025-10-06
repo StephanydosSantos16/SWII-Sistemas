@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+/* Botão carrinho */
+#btn-carrinho {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2e8b57;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  font-size: 20px;
+  z-index: 1001;
+}
+#btn-carrinho:hover { background-color: #246f47; }
+
+#contador-quantidade {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: none;
+  font-weight: bold;
+}
+
+/* Carrossel */
+.carrossel-container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.carrossel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.carrossel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.seta-anterior { left: 10px; }
+.seta-proximo { right: 10px; }
+
+/* Produtos */
+.produtos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.descricao { margin: 10px 0; }
+.preco { font-weight: bold; margin-bottom: 10px; }
+.botao-carrinho {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.botao-carrinho:hover { background: #246f47; }
+
+/* Carrinho lateral */
+#carrinho-lateral {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+#carrinho-lateral.aberto {
+  right: 0;
+}
